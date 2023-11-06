@@ -46,9 +46,9 @@ export class AppModule {
     consumer
       .apply(
         cookieSession({
-          keys"testingKey"e'],
-       }),
+          keys: ['testingKey'],
+        }),
       )
-      .forRout"*"'*');
+      .forRoutes"*"');
   }
 }
