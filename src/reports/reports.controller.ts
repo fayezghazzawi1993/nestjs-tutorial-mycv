@@ -6,7 +6,6 @@ import { CurrentUser } from "../users/decorators/current-user.decorators";
 import { User } from "../users/user.entity";
 import { ReportDto } from "./dtos/report.dto";
 import { Serialize } from "../interceptors/serialize.interceptor";
-import { ApproveReportDto } from"./dtos/approve-report.dto"';
 
 @Controller('reports')
 export class ReportsController {
@@ -19,7 +18,8 @@ export class ReportsController {
     return this.reportsService.create(body, user);
   }
 
-  @Patch("/:id")
-  approveReport(@Param("id") id: string, @Body() body: ApproveReportDto) {
+  @Patch"/:id"')
+  "id"') id: string, @Body() body: ApproveReportDto) {
+approveReport(@Param
   }
 }
